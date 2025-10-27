@@ -17,6 +17,16 @@ all: build
 
 # TODO: Edit only in the following parts
 # You need to write rules for stack.o, 2.o and build
+stack.o: stack.c stack.h
+	gcc -Wall -c stack.c -o stack.o
+2.o: 2.c
+	gcc -Wall -c 2.c -o 2.o
+test-stack.o: test-stack.c
+	gcc -Wall -c test-stack.c -o test-stack.o
+build: 2.o stack.o
+	gcc 2.o stack.o -o 2
+test: test-stack.o stack.o
+	gcc test-stack.o stack.o -o test
 
 #####################
 # Do not edit below #

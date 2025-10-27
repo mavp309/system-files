@@ -20,7 +20,13 @@ all: build
 # 	- linkedlist.o : compile the linked list library
 # 	- 1.o : compile 1.c
 # 	- build : build the final executable
-
+linkedlist.o : linkedlist.c
+	gcc -Wall -c linkedlist.c -o linkedlist.o
+1.o : 1.c
+	gcc -Wall -c 1.c -o 1.o
+1: linkedlist.o 1.o
+	gcc 1.o linkedlist.o -o 1
+build : 1
 #####################
 # Do not edit below #
 #####################

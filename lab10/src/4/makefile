@@ -17,6 +17,16 @@ all: build
 
 # TODO: Edit only in the following parts
 # You need to write rules as mentioned in the question
+list.o: list.c list.h
+	gcc -Wall -c list.c -o list.o
+4.o: 4.c
+	gcc -Wall -c 4.c -o 4.o
+bigint.o: bigint.c
+	gcc -Wall -c bigint.c -o bigint.o
+build: bigint.o list.o 4.o
+	gcc bigint.o list.o 4.o -o 4
+
+
 
 #####################
 # Do not edit below #

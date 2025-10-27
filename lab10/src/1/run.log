@@ -1,0 +1,427 @@
+===================
+test4: FAILED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+p -1
+q 0
+Expected output: 
+True
+21 19 14 12 
+Got output: 
+bash: line 1: 25158 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test4.in
+===================
+
+===================
+test6: FAILED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 14
+p -1
+q 0
+Expected output: 
+True
+Deleted
+21 19 12 
+Got output: 
+bash: line 1: 25174 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test6.in
+===================
+
+===================
+test5: FAILED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 12
+p -1
+q 0
+Expected output: 
+True
+Deleted
+21 19 14 
+Got output: 
+bash: line 1: 25192 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test5.in
+===================
+
+===================
+test18: FAILED
+Given input
+i 5
+i 15
+i 25
+s 15
+r -1
+p -1
+d 5
+p -1
+q 0
+Expected output: 
+True
+5 15 25 
+Deleted
+15 25 
+Got output: 
+bash: line 1: 25209 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test18.in
+===================
+
+===================
+test14: FAILED
+Given input
+i 50
+i 40
+i 60
+d 45
+s 50
+s 45
+p -1
+q 0
+Expected output: 
+Failed
+True
+False
+60 40 50 
+Got output: 
+bash: line 1: 25225 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test14.in
+===================
+
+===================
+test15: FAILED
+Given input
+i 10
+i 10
+i 20
+p -1
+d 10
+s 10
+p -1
+q 0
+Expected output: 
+20 10 10 
+Deleted
+True
+20 10
+Got output: 
+bash: line 1: 25243 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test15.in
+===================
+
+===================
+test10: FAILED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+p -1
+r -1
+p -1
+r -1
+d 14
+p -1
+d 19
+i 100
+p -1
+d 14
+p -1
+q 0
+Expected output: 
+True
+21 19 14 12 
+12 14 19 21 
+Deleted
+21 19 12 
+Deleted
+100 21 12 
+Failed
+100 21 12 
+Got output: 
+bash: line 1: 25259 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test10.in
+===================
+
+===================
+test8: FAILED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 14
+p -1
+d 19
+i 100
+p -1
+d 14
+p -1
+q 0
+Expected output: 
+True
+Deleted
+21 19 12 
+Deleted
+100 21 12 
+Failed
+100 21 12 
+Got output: 
+bash: line 1: 25276 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test8.in
+===================
+
+===================
+test2: FAILED
+Given input
+i 12
+i 13
+p -1
+q 0
+Expected output: 
+13 12 
+Got output: 
+bash: line 1: 25292 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test2.in
+===================
+
+===================
+test11: FAILED
+Given input
+i 7
+p -1
+q 0
+Expected output: 
+7 
+Got output: 
+bash: line 1: 25309 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test11.in
+===================
+
+===================
+test7: FAILED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 14
+p -1
+d 19
+p -1
+q 0
+Expected output: 
+True
+Deleted
+21 19 12 
+Deleted
+21 12 
+Got output: 
+bash: line 1: 25325 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test7.in
+===================
+
+===================
+test12: FAILED
+Given input
+i 11
+i 22
+i 33
+p -1
+s 22
+s 99
+d 11
+p -1
+r -1
+p -1
+q 0
+Expected output: 
+33 22 11 
+True
+False
+Deleted
+33 22 
+22 33 
+Got output: 
+bash: line 1: 25341 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test12.in
+===================
+
+===================
+test9: FAILED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+p -1
+r -1
+p -1
+d 14
+p -1
+d 19
+i 100
+p -1
+d 14
+p -1
+q 0
+Expected output: 
+True
+21 19 14 12 
+12 14 19 21 
+Deleted
+12 19 21 
+Deleted
+100 12 21 
+Failed
+100 12 21 
+Got output: 
+bash: line 1: 25357 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test9.in
+===================
+
+===================
+test16: PASSED
+Given input
+i 5
+i 15
+i 25
+p -1
+d 15
+p -1
+d 5
+p -1
+d 25
+p -1
+q 0
+Got output: 
+25 15 5 
+Deleted
+25 5 
+Deleted
+25 
+Deleted
+-1
+===================
+
+===================
+test17: FAILED
+Given input
+i 30
+i 10
+i 20
+p -1
+s 25
+d 10
+p -1
+q 0
+Expected output: 
+20 10 30 
+False
+Deleted
+20 30 
+Got output: 
+bash: line 1: 25380 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test17.in
+===================
+
+===================
+test1: FAILED
+Given input
+i 12
+p -1
+q 0
+Expected output: 
+12 
+Got output: 
+bash: line 1: 25397 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test1.in
+===================
+
+===================
+test19: FAILED
+Given input
+i 100
+i 50
+i 75
+p -1
+d 50
+s 75
+r -1
+p -1
+q 0
+Expected output: 
+75 50 100 
+Deleted
+True
+100 75 
+Got output: 
+bash: line 1: 25413 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test19.in
+===================
+
+===================
+test20: FAILED
+Given input
+i 6
+i 9
+i 20
+i 100
+s 4
+p -1
+r -1
+p -1
+d 100
+s 9
+p -1
+q 0
+Expected output: 
+False
+100 20 9 6 
+6 9 20 100 
+Deleted
+True
+6 9 20 
+Got output: 
+bash: line 1: 25429 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test20.in
+===================
+
+===================
+test3: FAILED
+Given input
+i 12
+i 14
+i 19
+i 21
+p -1
+q 0
+Expected output: 
+21 19 14 12 
+Got output: 
+bash: line 1: 25445 Segmentation fault         (core dumped) /home/mavp309/systemgit/system-files/lab10/src/1/1 < test3.in
+===================
+
+===================
+test13: PASSED
+Given input
+p -1
+s 5
+d 10
+i 100
+d 100
+p -1
+r -1
+q 0
+Got output: 
+-1
+False
+Failed
+Deleted
+-1
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 2
+TESTS_FAILED: 18
++++++++++++++++++++
+

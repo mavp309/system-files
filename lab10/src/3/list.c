@@ -4,7 +4,8 @@
  */
 
 //TODO: Add appropriate header files as needed
-
+#include<stdlib.h>
+#include<stdio.h>
 /*
  * Helper function to grow a list. 
  */
@@ -21,6 +22,8 @@ int grow(List* l){
 
 int shrink(List* l){
 	// TODO: Complete the function
+if(l==NULL)
+{}
 }
 
 /*
