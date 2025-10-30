@@ -1,5 +1,5 @@
 //TODO: Include appropriate header file as required
-
+#include "bigint.h"
 
 int main()
 {
@@ -12,6 +12,11 @@ int main()
 	read(b);
 
 	// TODO: Complete the main function which adds a and b and prints the
+	Bigint* c=add(a,b);
+	print(c);
+free_bigint(a);
+free_bigint(b);
+free_bigint(c);
 	// result
 	return 0;
 }

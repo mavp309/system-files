@@ -3,8 +3,8 @@ PROJ_HOME ?= $(CURDIR)
 TESTS_DIR ?= $(PROJ_HOME)/tests
 
 # Project specific
-NAME := 3
-SOURCES_LIST := 3.c
+NAME := 4
+SOURCES_LIST := 4.c
 MAKE_FILE := $(CURDIR)/$(lastword $(MAKEFILE_LIST))
 OPTS := -Wall -Werror
 
@@ -16,17 +16,14 @@ all: build
 #####################
 
 # TODO: Edit only in the following parts
-# You must write three rules:
-# 	- linkedlist.o : compile the linked list library
-# 	- 1.o : compile 1.c
-# 	- build : build the final executable
-list.o : list.c
-	gcc -Wall -c list.c -o list.o
-3.o : 3.c
-	gcc -Wall -c 3.c -o 3.o
-3: list.o 3.o
-	gcc .o list.o -o 3
-build : 3
+# You need to write rules for ivector.o, 4.o and build
+ivector.o: ivector.c ivector.h
+	gcc -Wall -c ivector.c -o ivector.o
+4.o: 4.c
+	gcc -Wall -c 4.c -o 4.o
+4: 4.o ivector.o
+	gcc 4.o ivector.o -o 4
+build: 4
 #####################
 # Do not edit below #
 #####################
@@ -36,7 +33,7 @@ run: build
 	@$(PROJ_HOME)/$(NAME)
 
 clean:
-	rm -f $(NAME) run.log leaks.log *.o
+	rm -f $(NAME) run.log leaks.log *.o 
 
 tests: clean build
 	@echo 'Running local test-suite'

@@ -1,0 +1,36 @@
+===================
+test2: FAILED
+Given input
+13 mutiny_Brutus 1 e
+Expected output: 
+nvujoz_Csvuvt
+Got output: 
+bash: line 1: 14491 Segmentation fault      (core dumped) /home/112401021/cs2013_112401021/labe2/src/2/2 < test2.in
+===================
+
+===================
+test1: FAILED
+Given input
+7 GoldCoins 3 e
+Expected output: 
+JrogFrlqv
+Got output: 
+bash: line 1: 14507 Segmentation fault      (core dumped) /home/112401021/cs2013_112401021/labe2/src/2/2 < test1.in
+===================
+
+===================
+test3: FAILED
+Given input
+29 hw_brx_euxwh_wkhq_idoo_fdhvdu 3 d
+Expected output: 
+et_you_brute_then_fall_caesar
+Got output: 
+bash: line 1: 14523 Segmentation fault      (core dumped) /home/112401021/cs2013_112401021/labe2/src/2/2 < test3.in
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 0
+TESTS_FAILED: 3
++++++++++++++++++++
+
